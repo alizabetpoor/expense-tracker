@@ -1,38 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgb(235, 233, 233);
+}
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   min-height: 100vh;
+}
+.search {
+  margin-bottom: 10px;
+}
+.search input {
+  width: 100%;
+  padding: 10px 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  background-color: rgb(223, 223, 223);
+  border: 1px solid #9ca3af;
+}
+.header {
+  font-size: 22px;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+.container {
+  width: 400px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  background-color: white;
+  border-radius: 5px;
+  padding: 20px;
+}
+.topoverview {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 10px;
+}
+.topoverview button {
+  padding: 5px 20px;
+  border-radius: 5px;
+  margin: 3px 0px;
+  border: 0px;
+  outline: 3px solid #3730a3;
+  cursor: pointer;
+  color: #4338ca;
+  background-color: #e0e7ff;
+}
+.cancel {
+  color: red !important;
+  background-color: white !important;
+  outline: 2px solid red !important;
+}
+.bottomoverview {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid #ccc;
+}
+.bottomoverview p {
+  font-size: 22px;
+  font-weight: 600;
+}
+.trans {
+  margin-top: 15px;
+}
+.form input[type="radio"] {
+  margin-left: 10px;
+}
+.form label {
+  margin-left: 3px;
+}
+.tran {
+  /* border: 2px solid #ccc; */
+  background-color: rgb(240, 240, 240);
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px;
+  margin: 5px 0px;
+}
+.tran p {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Courier New", Courier, monospace;
+}
+.form {
+  border-radius: 10px;
+  border: 2px solid #9ca3af;
+  padding: 10px;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: stretch;
+  flex-direction: column;
 }
-
-.App-link {
-  color: #61dafb;
+.form input,
+div {
+  margin: 10px 0px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form input {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.form button {
+  padding: 5px 5px;
+  border-radius: 5px;
+  margin: 3px 0px;
+  border: 0px;
+  color: #059669;
+  outline: 3px solid #047857;
+  background-color: #d1fae5;
+  cursor: pointer;
+}
+.expense {
+  border-right: 5px solid red;
+}
+.income {
+  border-right: 5px solid green;
+}
+.red-color {
+  color: red;
+}
+.green-color {
+  color: green;
+}
+.radios label {
+  font-size: 18px;
+  font-weight: 400;
 }
